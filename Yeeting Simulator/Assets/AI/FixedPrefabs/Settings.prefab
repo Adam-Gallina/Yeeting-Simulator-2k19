@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1130941082465994}
+  m_IsPrefabAsset: 1
+--- !u!1 &1130941082465994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4353530567956654}
+  - component: {fileID: 114915384037925346}
+  - component: {fileID: 114690708615762910}
+  - component: {fileID: 114962823837334324}
+  - component: {fileID: 114935222383616708}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4353530567956654
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130941082465994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114690708615762910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130941082465994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac674caa57b56b4bbd9a2d9b90ad964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllAI: []
+  ContructionMat: {fileID: 2100000, guid: bc13d6829de7f914f8853a8950bdff85, type: 2}
+  LumberMat: {fileID: 2100000, guid: f7cd62d595c763c428123f260c78b711, type: 2}
+  MinerMat: {fileID: 2100000, guid: 4ac93b4e9de93c7488055294cb59859c, type: 2}
+  HunterMat: {fileID: 2100000, guid: 9f1e83a925553f341a0607ccaf15264a, type: 2}
+  MinBounds: {x: 0, y: 0, z: 0}
+  MaxBounds: {x: 241, y: 30, z: 241}
+--- !u!114 &114915384037925346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130941082465994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335424bce04fda34880f284c5aa1fadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wood: []
+  Stone: []
+  Food: []
+--- !u!114 &114935222383616708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130941082465994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e26684bbdaa160408e85de571e6b058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CraftingR:
+  - Name: Small House
+    AmountBuilt: 0
+    MinAmt: 5
+    PercentNeeded: 73.1
+    Value: 1
+    Size: 1
+    Stone: 15
+    Wood: 35
+    Prefab: {fileID: 1091609340559844, guid: b604a51ef79f0764c9da702de2b0dc52, type: 2}
+  - Name: Apartment
+    AmountBuilt: 0
+    MinAmt: 2
+    PercentNeeded: 30.8
+    Value: 3
+    Size: 2
+    Stone: 30
+    Wood: 50
+    Prefab: {fileID: 1316547902115312, guid: cbe2dcf0e1d38c04793e839c3754df6f, type: 2}
+  - Name: Barn
+    AmountBuilt: 0
+    MinAmt: 1
+    PercentNeeded: 5.8
+    Value: 5
+    Size: 2
+    Stone: 45
+    Wood: 60
+    Prefab: {fileID: 1484207818924414, guid: 5b7f321f18bb39a4fb84f27e44dbd05e, type: 2}
+  Master: {fileID: 0}
+  Workers: []
+  tiles: []
+  Spacing: 10
+  Size: 250
+  YPoint: 0
+  BuiltTotal: 0
+  Road:
+    Name: Road
+    AmountBuilt: 0
+    MinAmt: 0
+    PercentNeeded: 0
+    Value: 0
+    Size: 0
+    Stone: 10
+    Wood: 0
+    Prefab: {fileID: 1495868341045986, guid: f11987bff95e2484fb694e57b1502a13, type: 2}
+  ID: 2
+--- !u!114 &114962823837334324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130941082465994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e26684bbdaa160408e85de571e6b058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CraftingR:
+  - Name: Small House
+    AmountBuilt: 0
+    MinAmt: 5
+    PercentNeeded: 73.1
+    Value: 1
+    Size: 1
+    Stone: 15
+    Wood: 35
+    Prefab: {fileID: 1091609340559844, guid: b604a51ef79f0764c9da702de2b0dc52, type: 2}
+  - Name: Apartment
+    AmountBuilt: 0
+    MinAmt: 2
+    PercentNeeded: 30.8
+    Value: 3
+    Size: 2
+    Stone: 30
+    Wood: 50
+    Prefab: {fileID: 1316547902115312, guid: cbe2dcf0e1d38c04793e839c3754df6f, type: 2}
+  - Name: Barn
+    AmountBuilt: 0
+    MinAmt: 1
+    PercentNeeded: 5.8
+    Value: 5
+    Size: 2
+    Stone: 45
+    Wood: 60
+    Prefab: {fileID: 1484207818924414, guid: 5b7f321f18bb39a4fb84f27e44dbd05e, type: 2}
+  Master: {fileID: 0}
+  Workers: []
+  tiles: []
+  Spacing: 10
+  Size: 250
+  YPoint: 0
+  BuiltTotal: 0
+  Road:
+    Name: Road
+    AmountBuilt: 0
+    MinAmt: 0
+    PercentNeeded: 0
+    Value: 0
+    Size: 0
+    Stone: 10
+    Wood: 0
+    Prefab: {fileID: 1495868341045986, guid: f11987bff95e2484fb694e57b1502a13, type: 2}
+  ID: 1
